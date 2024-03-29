@@ -13,7 +13,7 @@ import java.util.List;
 public class RNPureJwtPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNPureJwtModule(reactContext));
+      return Collections.singletonList(new RNPureJwtModule(reactContext));    
     }
 
     @Override
